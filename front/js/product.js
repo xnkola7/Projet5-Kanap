@@ -24,7 +24,7 @@ const fetchProduct = async () => {
       itemDesc.innerHTML = article.description;
       document.title = "Kanap - " + article.name;
 
-      for (const color of article.colors) {
+      for (var i = min; i < max; i++) {
         var opt = document.createElement("option");
         opt.value = i;
         opt.innerHTML = article.colors[i];
